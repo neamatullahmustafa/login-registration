@@ -1,5 +1,8 @@
-
-#loginForm {  background-color: rgb(0, 126, 0);}
+#loginForm {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/abstract-gradient-neon-lights.jpg");
+}
 section {
   display: flex;
   justify-content: center;
@@ -11,22 +14,41 @@ section {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  background-color: white;
-  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+  border-radius: 10px;
+  background-color: #ffffff1f;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.25);
 }
-
+#person {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff20;
+  color: #ffffff2f;
+  border-radius: 50%;
+}
+input::placeholder {
+  color: white;
+}
+input:enabled {
+  border: none;
+}
 #loginForm input {
   border: none;
-  background-color: #dddddd;
+  outline: none;
+  border-radius: 0;
+  color: white;
+
+  border-bottom: white solid 1px;
   display: block;
+  background-color: transparent;
   margin-bottom: 10px;
   padding: 5px;
   width: 100%;
 }
 
 #loginForm button {
-  background-color: rgb(0, 126, 0);
+  background-color: #00000050;
   width: 100%;
+  border-radius: 10px;
   border: none;
   padding: 5px 10px;
   color: white;
@@ -37,39 +59,4 @@ section {
   margin-top: 20px;
   font-weight: bold;
   color: black;
-}
-#todoForm .container {
-    box-shadow: 1px 1px 10px inset rgba(0, 0, 0, 0.103);
-  background-color: #f0f0f0;
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-#todoForm h1 {
-  margin-bottom: 20px;
-}
-
-#todoForm input {
-  display: block;
-  margin-bottom: 10px;
-  padding: 5px;
-  width: 100%;
-}
-
-#todoForm button {
-  padding: 5px 10px;
-}
-
-#todoForm #taskList li {
-  margin-bottom: 10px;
-}
-
-#todoForm .done {
-  color: green;
-  text-decoration: line-through;
-}
-
-#todoForm .deleteBtn {
-  margin-left: 10px;
 }
